@@ -665,7 +665,9 @@
         <a href="#faq">FAQ</a>
       </nav>
 
-      <a class="btn btn-primary" href="sms:0485050788?body=DEMO">SMS DEMO</a>
+      <a class="btn btn-secondary" href="./TradieCatch-User-Manual.pdf" download target="_blank">View User Manual</a>
+
+      <a class="btn btn-primary" href="https://sms.click/0485050788?body=DEMO">SMS 0485 050 788</a>
     </div>
   </header>
 
@@ -680,7 +682,7 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="sms:0485050788?body=DEMO">SMS DEMO to 0485 050 788</a>
+            <a class="btn btn-primary" href="https://sms.click/0485050788?body=DEMO">SMS DEMO to 0485 050 788</a>
             <a class="btn btn-secondary" href="#how">See how it works</a>
           </div>
 
@@ -816,7 +818,7 @@
           <p style="color: var(--muted); font-size: 1.05rem; margin-bottom: 24px;">
             TradieCatch is not just a basic missed-call text. It guides the customer through the details you need to decide whether the job is worth taking.
           </p>
-          <a class="btn btn-primary" href="sms:0485050788?body=DEMO">Try the demo</a>
+          <a class="btn btn-primary" href="https://sms.click/0485050788?body=DEMO">Try the demo</a>
         </div>
 
         <div class="feature-list">
@@ -860,7 +862,7 @@
             <div class="feature-item"><div class="tick">✓</div><div>Calls, jobs and settings dashboard</div></div>
           </div>
 
-          <a class="btn btn-primary" href="sms:0485050788?body=DEMO" style="width: 100%;">SMS DEMO to get started</a>
+          <a class="btn btn-primary" href="https://sms.click/0485050788?body=DEMO" style="width: 100%;">SMS DEMO to get started</a>
         </div>
       </div>
     </section>
@@ -900,10 +902,86 @@
       <div class="container">
         <h2>Want to see what your customers experience?</h2>
         <p>Test the demo flow and see how TradieCatch follows up, collects details and helps stop missed calls from becoming lost revenue.</p>
-        <a class="btn" href="sms:0485050788?body=DEMO">SMS DEMO to 0485 050 788</a>
+        <a class="btn" href="https://sms.click/0485050788?body=DEMO">SMS DEMO to 0485 050 788</a>
       </div>
     </section>
+  
+
+    <!-- SIMULATION SECTION -->
+    <section id="simulation">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Try the app simulation</h2>
+          <p>Click through and see exactly what TradieCatch looks like inside.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start;">
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <button class="btn btn-secondary" onclick="showScreen('calls')">Calls</button>
+            <button class="btn btn-secondary" onclick="showScreen('jobs')">Jobs</button>
+            <button class="btn btn-secondary" onclick="showScreen('settings')">Settings</button>
+          </div>
+
+          <div class="phone" style="margin:auto;">
+            <div class="phone-screen">
+
+              <!-- CALLS SCREEN -->
+              <div id="screen-calls" class="sim-screen">
+                <div class="app-header"><div class="app-title">Calls</div></div>
+                <div class="call-card">
+                  <div class="call-name">Sarah M.</div>
+                  <div class="chat-bubble">Ceiling fan install - awaiting booking</div>
+                </div>
+                <div class="call-card">
+                  <div class="call-name">Jason P.</div>
+                  <div class="chat-bubble">Emergency power outage</div>
+                </div>
+              </div>
+
+              <!-- JOBS SCREEN -->
+              <div id="screen-jobs" class="sim-screen" style="display:none;">
+                <div class="app-header"><div class="app-title">Jobs</div></div>
+                <div class="call-card">
+                  <div class="call-name">Booked Job</div>
+                  <div class="chat-bubble">Friday 9am - Switchboard repair</div>
+                </div>
+              </div>
+
+              <!-- SETTINGS SCREEN -->
+              <div id="screen-settings" class="sim-screen" style="display:none;">
+                <div class="app-header"><div class="app-title">Settings</div></div>
+                <div class="call-card">
+                  <div class="call-name">Services</div>
+                  <div class="chat-bubble">Edit your services list</div>
+                </div>
+                <div class="call-card">
+                  <div class="call-name">Service Area</div>
+                  <div class="chat-bubble">Set your travel radius</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function showScreen(screen){
+        document.querySelectorAll('.sim-screen').forEach(el=>el.style.display='none');
+        document.getElementById('screen-'+screen).style.display='block';
+      }
+    </script>
+
   </main>
+
+  <section>
+      <div class="container" style="text-align:center; padding:40px 0;">
+        <h3 style="margin-bottom:10px;">Want full details?</h3>
+        <p style="color:var(--muted); margin-bottom:20px;">Read the full TradieCatch user manual to understand exactly how everything works.</p>
+        <a class="btn btn-primary" href="./TradieCatch-User-Manual.pdf" download target="_blank">Open User Manual PDF</a>
+      </div>
+    </section>
 
   <footer>
     <div class="container footer-inner">
