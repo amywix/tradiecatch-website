@@ -51,7 +51,7 @@
       z-index: 50;
       background: rgba(5,8,13,0.9);
       backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(0,229,255,0.2);
+      border-bottom: 1px solid rgba(59,130,246,0.2);
     }
 
     .nav {
@@ -94,7 +94,7 @@
     }
 
     .nav-links a:hover {
-      color: var(--purple);
+      color: var(--primary-blue);
     }
 
     .btn {
@@ -195,8 +195,8 @@
     }
 
     .trust-row span {
-      background: rgba(255,255,255,0.72);
-      border: 1px solid rgba(0,229,255,0.2);
+      background: var(--card);
+      border: 1px solid rgba(59,130,246,0.2);
       border-radius: 999px;
       padding: 8px 12px;
     }
@@ -334,7 +334,7 @@
     }
 
     .chat-bubble {
-      background: rgba(0,229,255,0.08);
+      background: rgba(59,130,246,0.1);
       color: var(--primary-blue);
       border-radius: 16px 16px 16px 4px;
       padding: 10px 12px;
@@ -415,10 +415,11 @@
 
     .step {
       position: relative;
-      background: #fbfaff;
-      border: 1px solid rgba(0,229,255,0.2);
+      background: var(--card);
+      border: 1px solid rgba(59,130,246,0.2);
       border-radius: 26px;
       padding: 24px;
+      color: #e5faff;
     }
 
     .step-number {
@@ -430,7 +431,6 @@
       display: grid;
       place-items: center;
       font-weight: 900;
-      font-color: black;
       margin-bottom: 16px;
     }
 
@@ -460,8 +460,8 @@
       width: 28px;
       height: 28px;
       border-radius: 999px;
-      background: #dcfce7;
-      color: #166534;
+      background: rgba(59,130,246,0.15);
+      color: var(--primary-blue);
       display: grid;
       place-items: center;
       font-weight: 900;
@@ -543,7 +543,7 @@
 
     .cta {
       padding: 80px 0;
-      background: linear-gradient(135deg, var(--primary-blue), var(--purple), var(--pink));
+      background: linear-gradient(135deg, var(--primary-blue), var(--primary-red));
       color: white;
       text-align: center;
     }
@@ -851,7 +851,7 @@
           <div class="eyebrow" style="margin-bottom: 6px;">Most popular</div>
           <h3 style="font-size: 1.55rem; letter-spacing: -0.04em;">TradieCatch Setup + Monthly</h3>
           <div class="price">$99<small>/month</small></div>
-         
+          <div class="setup">$199 setup fee</div>
 
           <div class="price-list">
             <div class="feature-item"><div class="tick">✓</div><div>Dedicated business number setup</div></div>
